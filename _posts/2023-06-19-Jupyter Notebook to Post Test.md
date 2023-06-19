@@ -1,36 +1,32 @@
+Lets import openai library and enter our openai api we generated from [platform.openai.com](platform.openai.com)
 ```python
 import openai
 import pandas as pd
 openai.api_key = 'YOUR API HERE'
 ```
 
+In the code below, we make chatgpt to write us an exam question about taking derivatives. In the first message we specify chatgpt's capabilities. Since it is cheaper and still effective, I prefer "gpt-3.5-turbo" as the model. Denote that, you need to set up a payment method before being able to use api. You can also set a monthly usage limit to make sure it will not exceed some amount. You will pay as much as you used. No recurring payment or fix cost. 
 
 ```python
 
 messages = [ {"role": "system", "content": 
               "You are a intelligent assistant."} ]
-counter = 0
-while counter < 1:
-    print(counter)
-    counter = counter +1
-    message = "User : Could you write me an exam question for taking derivatives?"
-    print(message)
-    print("aftermessage")
-    if message:
-        print("inif")
 
-        messages.append(
-            {"role": "user", "content": message},
-        )
-        print("beforechat")
+print(counter)
 
-        chat = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo", messages=messages
-        )
-        print("afterchat")
-    reply = chat.choices[0].message.content
-    print(f"ChatGPT: {reply}")
-    messages.append({"role": "assistant", "content": reply})
+message = "User : Could you write me an exam question for taking derivatives?"
+print(message)
+
+if message:
+    messages.append(
+        {"role": "user", "content": message},
+    )
+    chat = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo", messages=messages
+    )
+reply = chat.choices[0].message.content
+print(f"ChatGPT: {reply}")
+messages.append({"role": "assistant", "content": reply})
 ```
 
 
