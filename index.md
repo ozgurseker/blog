@@ -1,8 +1,8 @@
-# Subtopics 
+# Topics 
 
-[./coding-stuff](https://ozgurseker.github.io/blog/./coding-stuff) 
+[coding-stuff](https://ozgurseker.github.io/blog/./coding-stuff) 
  
-[./posts](https://ozgurseker.github.io/blog/./posts) 
+[posts](https://ozgurseker.github.io/blog/./posts) 
  
 # All Posts 
 

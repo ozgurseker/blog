@@ -4,7 +4,7 @@ folder = ""
 filelist = os.listdir()
 subfolders = [ f.path for f in os.scandir() if f.is_dir() ]
 subfolders = [ f for f in subfolders if os.path.exists(f + "/index.md")]
-subfoldernames = [f[len(folder):] for f in subfolders]
+subfoldernames = [f[2:] for f in subfolders]
 indexed_list = ""
 
 base_url = "https://ozgurseker.github.io/blog/"
@@ -19,7 +19,7 @@ sorted_filename_list = [ os.path.basename(i) for i in lst_files if os.path.basen
 lst_files = [ i for i in lst_files if os.path.basename(i) != "index.md"]
 
 if len(subfolders) > 0:
-    indexed_list = indexed_list + "# Subtopics \n\n"
+    indexed_list = indexed_list + "# Topics \n\n"
     
 for i in range(len(subfolders)):
     fname = subfoldernames[i]
