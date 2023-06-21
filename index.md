@@ -1,7 +1,18 @@
----
-title: Ozgur's Blog
-description: In this blog, I will try to share what I have learned/coded recently with explanations. It will be like a diary to myself that I could turn back and remember whenever I need, also a helper for people faced similar problems with me. Not only for scientific or coding purposes, I might also use it for opinions, critics and everything else. 
-author: Ozgur Seker
----
+# Subtopics 
 
+[./coding-stuff](https://ozgurseker.github.io/blog/./coding-stuff) 
+ 
+[./posts](https://ozgurseker.github.io/blog/./posts) 
+ 
+# All Posts 
 
+[First Blog Post](https://ozgurseker.github.io/blog/posts/First Blog Post) 
+ 
+[Media Test](https://ozgurseker.github.io/blog/posts/Media Test) 
+ 
+[test](https://ozgurseker.github.io/blog/posts/test) 
+ 
+[2023-06-20-First Coding Post](https://ozgurseker.github.io/blog/coding-stuff/_posts/2023-06-20-First Coding Post) 
+ 
+[Jupyter Notebook to Post Test](https://ozgurseker.github.io/blog/posts/Jupyter Notebook to Post Test) 
+ 
