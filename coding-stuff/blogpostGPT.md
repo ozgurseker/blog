@@ -1,9 +1,9 @@
 
-In this post, I wanted to share how I automated the data extraction project for my research. I have more than 2000 yearbook in docx format that I want to extract data from. Before using chatgpt, I was trying to extract it with my own code. However, the files were not standart, some of them were ill-formatted and it was really challenging to find a common pattern that applies each. But asking chatgpt to do it solved my problem.
+In this post, I wanted to share how I automated the data extraction project for my research. I have more than 2000 yearbooks in docx format that I want to extract data from. Before using chatgpt, I was trying to extract it with my own code. However, the files were not standard, some of them were ill-formatted and it was challenging to find a common pattern that applies to each. But asking chatgpt to do it solved my problem.
 
-We need api access from openai to use chatgpt by python. Signup in [https://platform.openai.com/](https://platform.openai.com). From personal in up-right corner, go to "View API keys". Create a secret key and copy it for your application. Moreover, you need to go billing in the same page and set up a payment method to be able use this API key. It doesnt cost much and you can also set monthly limit on your usage. 
+We need API access from openai to use chatgpt by Python. Signup at [https://platform.openai.com/](https://platform.openai.com). From personal in the up-right corner, go to "View API keys". Create a secret key and copy it for your application. Moreover, you need to go to billing on the same page and set up a payment method to be able to use this API key. It doesn't cost much and you can also set a monthly limit on your usage. 
 
-We can start to code our program. We need docx and openai packages only (Note that, to download docx package you need to use: pip install python-docx, not pip install docx). Then we enter our API key we generated
+We can start to code our program. We need docx and openai packages only (Note that, to download the docx package you need to use: pip install python-docx, not pip install docx). Then we enter the API key we generated
 
 ```python
 import openai
@@ -11,7 +11,7 @@ import docx
 openai.api_key = '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'
 ```
 
-By using our docx library, we will read our docx files. I added two different functions for that purpose. This part is dependent on how your file is formatted. In my files, all information I need were embedded as tables instead of paragraphs, so I used the first one which convert all tables into text in a docx file. 
+By using our docx library, we will read our docx files. I added two different functions for that purpose. This part is dependent on how your file is formatted. In my files, all information I need was embedded as tables instead of paragraphs, so I used the first one which convert all tables into text in a docx file. 
 
 ```python
 def getText_tables(filepath):
@@ -41,7 +41,7 @@ def getText_paragraphs(filepath):
 
 ```
 
-After getting our document as a string, now we can create a query by using this string and the question we have. In the function below, we create our input for chat gpt. You can modify it for your purpose. Our first argument is a string contains the document and the second one is the question we want chatgpt to answer by using the first argument. 
+After getting our document as a string, now we can create a query by using this string and the question we have. In the function below, we create our input for chatgpt. You can modify it for your purpose. Our first argument is a string containing the document and the second one is the question we want chatgpt to answer by using the first argument. 
 
 ```python
 def query_for_document(text_doc, question):
@@ -56,7 +56,7 @@ def query_for_document(text_doc, question):
     return query
 
 ```
-Now we can create a function that calls api and let chatgpt to answer our question by query we created with previous function. In this function, you can see that we are using the "gpt-3.5-turbo" model. This one is pretty efficient and cheap relative to gpt-4.0. You could check different models from openai website. Moreover, I assign a role to the chatgpt such that it can answer my question in this role. I told her to be a data extracting program fluent in Turkish and English since my documents contain both languages. It worked well for me but you might need to try different roles/questions/models to find which one works for you. 
+Now we can create a function that calls api and let chatgpt answer our question by query we created with the previous function. In this function, you can see that we are using the "gpt-3.5-turbo" model. This one is pretty efficient and cheap relative to gpt-4.0. You could check different models from openai website. Moreover, I assign a role to the chatgpt such that it can answer my question in this role. I told her to be a data extracting program fluent in Turkish and English since my documents contain both languages. It worked well for me but you might need to try different roles/questions/models to find which one works for you. 
 
 ```python
 
@@ -121,7 +121,7 @@ print(text)
 
 
 This string looks fine to me.
-Lets ask our question. I wanted to extract board members and get it as a python list.
+Let's ask our question. I wanted to extract board members and get it as a Python list.
 
 ```python
 
@@ -135,4 +135,4 @@ print(answer)
 
 It looks pretty good. If you want to extract more information, you can make your question more detailed and you could want chatgpt to prepare it as a .json file. The rest will be up to you. 
 
-I have tried using other LLM models in huggingface for this purpose, but they mostly answered me with only one name. So I gave up using them and accepted the price. The price is like 600K words input ~ $1.5 and 600K words output ~ $2 which didnt seem like a big deal for me. 
+I have tried using other LLM models in huggingface for this purpose, but they mostly answered me with only one name. They might work for you and you might give it a try. But I gave up using them for now and accepted the price. The price is like 600K words input ~ $1.5 and 600K words output ~ $2 which didn't seem like a big deal for me. 
