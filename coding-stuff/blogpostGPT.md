@@ -58,8 +58,7 @@ def query_for_document(text_doc, question):
 ```
 Now we can create a function that calls api and let chatgpt answer our question by query we created with the previous function. In this function, you can see that we are using the "gpt-3.5-turbo" model. This one is pretty efficient and cheap relative to gpt-4.0. You could check different models from openai website. Moreover, I assign a role to the chatgpt such that it can answer my question in this role. I told her to be a data extracting program fluent in Turkish and English since my documents contain both languages. It worked well for me but you might need to try different roles/questions/models to find which one works for you. 
 
-```python
-
+<code>
 def get_chatgpt_answer_from_query(query):
     response = openai.ChatCompletion.create(
         messages=[
@@ -71,7 +70,8 @@ def get_chatgpt_answer_from_query(query):
     )
 
     return response['choices'][0]['message']['content']
-```
+</code>
+
 We just completed the basics we need. The only thing left is running and checking if it runs properly. 
 
 ```python
