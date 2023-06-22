@@ -1,4 +1,4 @@
-# Coding Stuff
+# Posts 
 
-All coding related stuff under here
-
+[blogpostGPT](https://ozgurseker.github.io/blog/coding-stuff/blogpostGPT) 
+ 

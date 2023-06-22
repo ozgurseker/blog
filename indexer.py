@@ -1,5 +1,5 @@
 import os
-folder = "posts/"
+folder = "coding-stuff/"
 filelist = os.listdir(folder)
 subfolders = [ f.path for f in os.scandir(folder) if f.is_dir() ]
 subfolders = [ f for f in subfolders if os.path.exists(f + "index.md")]
