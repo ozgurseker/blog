@@ -8,7 +8,7 @@ We can start to code our program. We need docx and openai packages only (Note th
 ```python
 import openai
 import docx
-openai.api_key = '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'
+openai.api_key = 'YOUR_API_KEY'
 ```
 
 By using our docx library, we will read our docx files. I added two different functions for that purpose. This part is dependent on how your file is formatted. In my files, all information I need was embedded as tables instead of paragraphs, so I used the first one which convert all tables into text in a docx file. 
