@@ -5,6 +5,8 @@
   }
 </style>
 
+# Data Extraction with ChatGPT
+
 In this post, I wanted to share how I automated the data extraction project for my research. I have more than 2000 yearbooks in docx format that I want to extract data from. Before using chatgpt, I was trying to extract it with my own code. However, the files were not standard, some of them were ill-formatted and it was challenging to find a common pattern that applies to each. But asking chatgpt to do it solved my problem.
 
 We need API access from openai to use chatgpt by Python. Signup at [https://platform.openai.com/](https://platform.openai.com). From personal in the up-right corner, go to "View API keys". Create a secret key and copy it for your application. Moreover, you need to go to billing on the same page and set up a payment method to be able to use this API key. It doesn't cost much and you can also set a monthly limit on your usage. 
