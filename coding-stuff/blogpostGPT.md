@@ -1,3 +1,9 @@
+<style>
+  code {
+    white-space : pre-wrap !important;
+    word-break: break-word;
+  }
+</style>
 
 In this post, I wanted to share how I automated the data extraction project for my research. I have more than 2000 yearbooks in docx format that I want to extract data from. Before using chatgpt, I was trying to extract it with my own code. However, the files were not standard, some of them were ill-formatted and it was challenging to find a common pattern that applies to each. But asking chatgpt to do it solved my problem.
 
