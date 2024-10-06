@@ -1,6 +1,6 @@
 # About 
 
-<img align="right" src="docs/assets/img/ppsmll.jpg">
+<img align="right" src="https://ozgurseker.github.io/blog/docs/assets/img/ppsmll.jpg">
 
 Hello, 
 
@@ -18,7 +18,7 @@ I love teaching. Before completing my PhD, I will have been taught 5 different c
 
 # Hobbies
 
-
+I wanted to share how I spend my free time. I am a passionate table tennis player at amateur level. 
 
 ## Table Tennis
 
