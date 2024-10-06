@@ -1,6 +1,6 @@
 # About 
 
-<img align="right" src="https://ozgurseker.github.io/blog/docs/assets/img/ppsmll.jpg">
+<img align="right" src="https://ozgurseker.github.io/blog/docs/assets/img/ppsmll.jpg" width="354" height="357">
 
 Hello, 
 
