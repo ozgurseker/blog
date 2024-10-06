@@ -1,6 +1,6 @@
 # About 
 
-<img align="right" src="/docs/assets/img/ppsmll.jpg">
+<img align="right" src="docs/assets/img/ppsmll.jpg">
 
 Hello, 
 
