@@ -2,3 +2,4 @@ theme: jekyll-theme-cayman
 title: Şeker Blog
 author: Ozgur Seker
 description: Ozgur Seker's Blog
+layout: default
