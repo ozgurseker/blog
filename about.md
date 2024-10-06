@@ -1,5 +1,7 @@
 # About 
 
+<img align="right" src="/docs/assets/img/ppsmll.jpg">
+
 Hello, 
 
 My name is Ozgur Seker. I am currently a 5th-year Ph.D. student at UPenn Econ. 
