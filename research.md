@@ -26,7 +26,7 @@ Skills:
 
 **Abstract:** 
 
-In this paper, I propose a model of endogenous innovation and political connection of competing firms trying to get monopoly rents in an environment of exogenous political competition. The model endogenizes the TFP growth, corruption through political connections, R\&D intensity, and steady-state probabilities of firms' relative positions dependent on exogenous political parameters. The model results match the documented facts in the politically connected firms literature and give insights into the dynamics of corruption and innovation between competing politically connectable firms. 
+In this paper, I propose a model of endogenous innovation and political connection of competing firms trying to get monopoly rents in an environment of exogenous political competition. The model endogenizes the TFP growth, corruption through political connections, R&D intensity, and steady-state probabilities of firms' relative positions dependent on exogenous political parameters. The model results match the documented facts in the politically connected firms literature and give insights into the dynamics of corruption and innovation between competing politically connectable firms. 
 
 Skills:
 - Modeling
