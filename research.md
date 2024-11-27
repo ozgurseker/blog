@@ -11,13 +11,16 @@ This paper investigates the impact of political affiliation on firms' investment
 
 Key findings reveal that large firms tend to initiate investment projects after losing political connections, while smaller firms are more likely to invest when politically aligned with the government. Additionally, political alignment boosts stock market returns, and firms adjust their board composition to strengthen political ties, especially when new firms enter the stock market in their sector.
 
+[Draft][https://ozgurseker.github.io/blog/docs/assets/JMP_DRAFT.pdf]
+
 Skills: 
+- Quasi-Experiment Design
 - Document scraping on Python
 - Web scraping with changing IPs in Python
 - Panel Data analysis for Causal Inference
 - Event study
 - Random Forest
-- Data Analysis, Cleaning, and Visualization on R
+- Data Analysis, Cleaning, and Visualization on R-tidyverse
 
 ## Competing Politically Connectible Firms:
 ### A Quantitative Analysis of Endogenous Innovation and Corruption
@@ -28,8 +31,11 @@ Skills:
 
 In this paper, I propose a model of endogenous innovation and political connection of competing firms trying to get monopoly rents in an environment of exogenous political competition. The model endogenizes the TFP growth, corruption through political connections, R&D intensity, and steady-state probabilities of firms' relative positions dependent on exogenous political parameters. The model results match the documented facts in the politically connected firms literature and give insights into the dynamics of corruption and innovation between competing politically connectable firms. 
 
+[Draft][https://ozgurseker.github.io/blog/docs/assets/3rdYearPaperDraft.pdf]
+
 Skills:
-- Modeling
+- Economic Modeling
+- Endogenous Growth Theory
 - Quantitative Analysis
 - Scientific Computation on Python
 - Dynamic Programming
