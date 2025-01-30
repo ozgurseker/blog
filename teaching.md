@@ -4,8 +4,8 @@ I have been tutoring at various levels since my college years and have held prof
 
 ## Instructor at Penn
 
-- Econ 100: Introduction to Microeonomics, instructor of the course in Summer II 2022, Summer I-II 2023, Fall 2024
-- Econ 200: Introduction to Macroeconomics, instructor of the course in Spring 2023
+- Econ 100: Introduction to Microeonomics, instructor of the course in Summer II 2022, Summer I-II 2023, and Fall 2024
+- Econ 200: Introduction to Macroeconomics, instructor of the course in Spring 2023 and Spring 2025
 - Mentorship: Mentoring new instructors for Penn LPS in Summer 2024
 
 ## Teaching Assistant at Penn
